@@ -10,7 +10,7 @@ import selenium.driver.WebDriverConfig;
 
 public class WebDriverProvider extends TestWatcher {
     private final WebDriverBuilder webDriverBuilder;
-    private WebDriver driver;
+   // private WebDriver driver;
 
     public WebDriverProvider(final WebDriverConfig webDriverConfig) {
         this.webDriverBuilder = new WebDriverBuilder(webDriverConfig);
@@ -34,12 +34,12 @@ public class WebDriverProvider extends TestWatcher {
     public boolean existsDriver() {
         return driver != null;
     }
-
+/*
     @Override
     protected void starting(final Description description) {
         String methodName = description.getClassName() + "." + description.getMethodName();
         this.webDriverBuilder.setName(methodName);
-    }
+    }*/
 
     @Override
     protected void finished(final Description description) {
