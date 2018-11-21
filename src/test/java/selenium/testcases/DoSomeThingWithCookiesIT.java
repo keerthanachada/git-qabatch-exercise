@@ -18,10 +18,10 @@ public class DoSomeThingWithCookiesIT extends SeleniumTestWrapper {
     StartPage startPage = PageFactory.initElements(getDriver(), StartPage.class);
     Cookies cookies = new Cookies(getDriver());
 
-    @Before
+   /* @Before
     public void setup() {
         startPage.open();
-    }
+    }*/
 
     @Test
     public void checkSomeValueFromCertainCookie() {
