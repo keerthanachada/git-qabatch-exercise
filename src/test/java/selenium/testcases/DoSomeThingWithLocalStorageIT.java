@@ -22,10 +22,10 @@ public class DoSomeThingWithLocalStorageIT extends SeleniumTestWrapper {
     StartPage startPage = PageFactory.initElements(getDriver(), StartPage.class);
     LocalStorage localStorage = new LocalStorage(getDriver());
 
-    @Before
+   /* @Before
     public void setup() {
         startPage.open();
-    }
+    }*/
 
     @Test
     public void checkSomeValueFromCertainLocalStorageEntry() {

@@ -28,10 +28,10 @@ public class SearchIT extends SeleniumTestWrapper {
 	HeaderSearch search = PageFactory.initElements(getDriver(), HeaderSearch.class);
 	SearchResultPage searchResultPage = PageFactory.initElements(getDriver(), SearchResultPage.class);
 
-	@Before
+	/*@Before
 	public void setup() {
 		startPage.open();
-	}
+	}*/
 
 	@Test
 	public void exampleTestForUserSearch() {
